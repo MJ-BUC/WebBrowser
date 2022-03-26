@@ -333,6 +333,16 @@ button {
   width: max-content;
 }
 
+/* NEW LOGO */
+
+.ui-terminal-logo {
+  font-weight: bold;
+  color: var(--ui-color-n-900);
+  font-size: 100px;
+}
+
+
+
 /* CONTENT */
 
 .ui-section-hero--content {
