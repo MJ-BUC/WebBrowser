@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Scripting -->
+    <script src = "C:\\Users\\lunke\\OneDrive\\Documents\\Github\\WebBrowser\\fileWriting.js"></script>
     <!-- TITLE -->
     <title>Dev Browser</title>
   </head>
@@ -53,13 +55,6 @@
       <section class="ui-section-hero">
         <div class="ui-layout-container">
           <div class="ui-layout-column-6 ui-layout-column-center">
-            <!-- WIREFRAME LOGO -->
-            <!-- <a href="#" role="link" aria-label="#" class="ui-section-hero--logo">
-              <svg viewBox="0 0 48 48" height="48" width="48">
-                <rect fill="#353535" height="48" width="48" rx="8"/>
-                <path fill="#FFF" d="M12 13h6v12a6 6 0 0012 0v-4h6v4c0 6.627-5.373 12-12 12s-12-5.373-12-12V13zm24 6v-6h-6v6h6z"/>
-              </svg>
-            </a> -->
             <h1 class="ui-terminal-logo">>_</h1>
             <!-- COPYWRITING -->
             <div class="ui-section-hero--content">
@@ -67,15 +62,27 @@
               <p class="ui-text-intro">A browser made by developers, for developers.</p>
               <!-- CTA -->
               <div class="ui-component-cta ui-layout-flex">
-                <form action="#" class="ui-component-form ui-layout-grid ui-layout-column-4">
-                  <input type="search" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
-                  <button type="search" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
+                <form action="#" onSubmit="WriteToFile(this)" class="ui-component-form ui-layout-grid ui-layout-column-4">
+                  <input type="text" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
+                  <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
                 </form>
+
+                <!-- Example for forms html to js and js to txt -->
+                <form onSubmit="WriteToFile(this)"> 
+                  <label>Type your first name:</label> 
+                  <input type="text" name="FirstName" id="firstName" size="20"> 
+                   
+                  <label>Type your last name: </label> 
+                  <input type="text" name="LastName" id="lastName" size="20"> 
+                   
+                  <input type="submit" value="submit"> 
+                  </form> 
+
+
+
                 <p class="ui-text-note"><small>Soon to be available on Android and iOS.</small></p>
               </div>
             </div>
-            <!-- IMAGE -->
-            <!-- <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/iphones.png" loading="lazy" alt="#"> -->
           </div>
         </div>
       </section>
