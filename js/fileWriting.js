@@ -12,3 +12,9 @@ function WriteToFile(passForm) {
     s.writeline("-----------------------------"); 
     s.Close(); 
  }
+
+
+// testing for js
+// function Hello() {
+//     alert("Hello, World");
+//  }
