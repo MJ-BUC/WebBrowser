@@ -34,3 +34,8 @@ function Append(content) {
 // function Hello() {
 //     alert("Hello, World");
 //  }
+
+document.querySelector("form button").addEventListener("click", (e) => {
+    const text = document.querySelector("form input").value
+    console.log(text)
+})

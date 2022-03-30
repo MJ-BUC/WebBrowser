@@ -25,7 +25,7 @@
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
     <!-- Scripting -->
-    <script src="js/fileWriting.js" type="text/javascript"></script>
+    <script src="js/fileWriting.js" type="text/javascript" defer></script>
 
     <!-- TITLE -->
     <title>Dev Browser</title>
@@ -63,13 +63,13 @@
               <p class="ui-text-intro">A browser made by developers, for developers.</p>
               <!-- CTA -->
               <div class="ui-component-cta ui-layout-flex">
-                <form action="#" onSubmit="WriteToFile(this)" class="ui-component-form ui-layout-grid ui-layout-column-4">
-                  <input type="text" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
-                  <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
+                <form action="#" class="ui-component-form ui-layout-grid ui-layout-column-4">
+                  <input type="text" id="search" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
+                  <button type="button" onclick="Append(this)" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
                 </form>
 
                 <!-- Example for forms html to js and js to txt -->
-                <form onSubmit="Append(this)"> 
+                <!-- <form onSubmit="Append(this)"> 
                   <label>Type your first name:</label> 
                   <input type="text" name="FirstName" id="firstName" size="20"> 
                    
@@ -77,19 +77,19 @@
                   <input type="text" name="LastName" id="lastName" size="20"> 
                    
                   <input type="submit" value="submit"> 
-                  </form> 
+                  </form>  -->
                   
 
 
                   <!-- Example of using js in an html page -->
-                  <head>
+                  <!-- <head>
                     <title>Javascript External Script</title>
                     <script src = "js/script.js" type = "text/javascript"/></script>
                  </head>
               
                  <body>
                     <input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" />
-                 </body>
+                 </body> -->
 
 
 
