@@ -17,13 +17,14 @@ def webbrowser():
 #     processed_text = text.upper()
 #     return processed_text
 
-@app.route('/data', methods = ['POST', 'GET'])
+@app.route('/result', methods = ['POST', 'GET'])
 def data():
     if request.method == 'GET':
-        return f"The URL /data is accessed directly. Try going to '/form' to submit form"
+        return f"The URL /result is accessed directly. Try going to '/index' to submit form"
     if request.method == 'POST':
-        form_data = request.form
-        return render_template('data.html',form_data = form_data)
+        form_data = request.form["search"] # uses the name attribute of the html input as the key because form data is saved as dict
+        print(form_data)
+        return render_template('result.html'), "<p>Form data: </p>"+form_data
 
 if __name__ == "__main__":
     app.run(debug=True)
