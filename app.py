@@ -1,10 +1,15 @@
+import os
 from flask import Flask, request, render_template
 
-app = Flask(__name__)
+# Flask does not know where the root folder for the project is
+# so this must be used to see html templates
+project_root = os.path.dirname(__file__)
+template_path = os.path.join(project_root, 'C:\\Users\\lunke\\OneDrive\\Documents\\Github\\WebBrowser\\templates')
+app = Flask(__name__, template_folder=template_path)
 
 @app.route('/')
 def webbrowser():
-    return render_template('webbrowser.html')
+    return render_template('index.html')
 
 # @app.route('/', methods=['POST'])
 # def my_form_post():
