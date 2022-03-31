@@ -1,14 +1,14 @@
-function Append(content) {
+// function Append(content) {
     
-    const fs = require('fs');
+//     const fs = require('fs');
 
-    fs.appendFile('C:\\Users\\lunke\\OneDrive\\Documents\\Github\\WebBrowser\\webdata.txt', content + "\n", err => {
-        if (err) {
-            console.err;
-            return;
-        }
-    });
-}
+//     fs.appendFile('C:\\Users\\lunke\\OneDrive\\Documents\\Github\\WebBrowser\\webdata.txt', content + "\n", err => {
+//         if (err) {
+//             console.err;
+//             return;
+//         }
+//     });
+// }
 
 // debugging for js file
 // Append("Cheese" + "\n");
@@ -35,7 +35,7 @@ function Append(content) {
 //     alert("Hello, World");
 //  }
 
-document.querySelector("form button").addEventListener("click", (e) => {
-    const text = document.querySelector("form input").value
-    console.log(text)
-})
+// document.querySelector("form button").addEventListener("click", (e) => {
+//     const text = document.querySelector("form input").value
+//     console.log(text)
+// })
