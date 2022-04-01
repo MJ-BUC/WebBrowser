@@ -11,12 +11,6 @@ app = Flask(__name__, template_folder=template_path)
 def webbrowser():
     return render_template('index.html')
 
-# @app.route('/', methods=['POST'])
-# def my_form_post():
-#     text = request.form['text']
-#     processed_text = text.upper()
-#     return processed_text
-
 @app.route('/result', methods = ['POST', 'GET'])
 def data():
     if request.method == 'GET':

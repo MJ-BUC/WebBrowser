@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="#" sizes="48x48">
     <!-- PERFORMANCE -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="preload" as="style" href="/static/styles/style.css">
+    <link rel="preload" as="style" href="{{ url_for('static',filename='styles/style.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"> <!-- allows flask to see the css file -->
     <!-- Scripting -->
     <script src="js/fileWriting.js" type="text/javascript" defer></script>

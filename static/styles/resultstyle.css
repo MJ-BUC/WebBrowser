@@ -1,0 +1,55 @@
+:root {
+
+    --ui-color-n-100: #ebebeb;
+    --ui-color-n-200: #353535;
+    --ui-color-n-300: #3e1a1a;
+    --ui-color-n-400: #212667;
+
+
+    --ui-typography-typeface: "Inter", sans-serif;
+
+  /* FONT SIZE */
+
+  --ui-typography-h1: 1.9375rem;
+  --ui-typography-p : 1rem;
+  --ui-typography-s : .8125rem;
+
+  /* LEADING */
+
+  --ui-typography-h1-leading: 1.2;
+  --ui-typography-p-leading : 1.5;
+
+  /* MARGIN */
+
+  --ui-typography-margin-heading: .75rem;
+  --ui-typography-margin-body   : 1.125rem;
+
+  --ui-background-color-primary: linear-gradient(to right, var(--ui-color-n-300), var(--ui-color-n-400));
+}
+
+body {
+    background-color: var(--ui-color-n-200);
+    color: var(--ui-color-n-100);
+    font-family: var(--ui-typography-typeface);
+    font-feature-settings: "liga", "kern";
+    font-size: var(--ui-typography-p);
+    font-weight: 400;
+    line-height: var(--ui-typography-p-leading);
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-top: 80px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    color: var(--ui-color-n-100);
+}
+
+h3 {
+    color: var(--ui-color-n-100)
+}
+
+p {
+    color: var(--ui-color-n-100);
+}
