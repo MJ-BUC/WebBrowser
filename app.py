@@ -14,11 +14,6 @@ displayLinkList = []
 snippetList = []
 linkList = []
 
-title = ""
-dispLink = ""
-snippet = ""
-link = ""
-
 ### Google custom search using google api ###
 my_api_key = ""
 my_cse_id = ""
@@ -49,11 +44,11 @@ def data():
             displayLinkList.append(result['displayLink'])
             snippetList.append(result['snippet'])
             linkList.append(result['link'])
-            print('\n\n')
-            pprint.pprint(result['title'])
-            pprint.pprint(result['displayLink'])
-            pprint.pprint(result['snippet'])
-            pprint.pprint(result['link'])
+            # print('\n\n')
+            # pprint.pprint(result['title'])
+            # pprint.pprint(result['displayLink'])
+            # pprint.pprint(result['snippet'])
+            # pprint.pprint(result['link'])
 
             tListLen = 0
 

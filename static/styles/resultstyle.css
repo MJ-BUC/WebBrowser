@@ -6,9 +6,9 @@
     --ui-color-n-400: #212667;
 
 
-    --ui-typography-typeface: "Inter", sans-serif;
+    --ui-typography-typeface: "Poppins", sans-serif;
 
-  /* FONT SIZE */
+  /* FONT SIZE   original: Inter*/
 
   --ui-typography-h1: 1.9375rem;
   --ui-typography-p : 1rem;
@@ -25,6 +25,8 @@
   --ui-typography-margin-body   : 1.125rem;
 
   --ui-background-color-primary: linear-gradient(to right, var(--ui-color-n-300), var(--ui-color-n-400));
+
+  --ui-display-link:
 }
 
 body {
@@ -52,4 +54,10 @@ h3 {
 
 p {
     color: var(--ui-color-n-100);
+}
+
+.ui-display-link {
+    margin-top: 1px;
+    padding: 1px;
+    font-size: smaller;
 }
