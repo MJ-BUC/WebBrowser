@@ -4,4 +4,5 @@
 
 <h1> Progress Report </h1>
 Current Home/Search screen:
-![WebBrowserSearch](https://github.com/MJ-BUC/WebBrowser/blob/main/Progress/Home_Search.png)
+![WebBrowserSearch](https://user-images.githubusercontent.com/82846057/161549298-ead2d518-51d7-4ac5-bf54-163d110fcf84.png)
+<img width="1280" alt="Home_Search" src="https://user-images.githubusercontent.com/82846057/161549298-ead2d518-51d7-4ac5-bf54-163d110fcf84.png">
