@@ -26,48 +26,58 @@
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/resultstyle.css') }}"> <!-- allows flask to see the css file -->
         <title>Temp Results Page</title>
     </head>
-    <body>
-        <h1>Temp Results Page:</h1>
-        <p>Input search: {{formData}}</p>
+    <header>
+        <div class="ui-component-cta ui-layout-flex">
+            <form action="/result" method="POST" class="ui-component-form ui-layout-grid ui-layout-column-4">
+            <input type="text" name="search" id="search" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
+            <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
+            </form>
+        </div>
+    </header>   
+    <div class="ui-body-background">
+        <body>
+            <h1>Temp Results Page:</h1>
+            <p>Input search: {{formData}}</p>
 
-        <a href={{link1}}><h3>{{title1}}</h3></a> 
-        <p class="ui-display-link">{{dispLink1}}</p>
-        <p>{{snippet1}}</p>
+            <a href={{link1}}>{{title1}}</a> 
+            <p class="ui-display-link">{{dispLink1}}</p>
+            <p class="ui-snippet">{{snippet1}}</p>
 
-        <a href={{link2}}><h3>{{title2}}</h3></a> 
-        <p class="ui-display-link">{{dispLink2}}</p>
-        <p>{{snippet2}}</p>
+            <a href={{link2}}>{{title2}}</a> 
+            <p class="ui-display-link">{{dispLink2}}</p>
+            <p class="ui-snippet">{{snippet2}}</p>
 
-        <a href={{link3}}><h3>{{title3}}</h3></a> 
-        <p class="ui-display-link">{{dispLink3}}</p>
-        <p>{{snippet3}}</p>
+            <a href={{link3}}>{{title3}}</a> 
+            <p class="ui-display-link">{{dispLink3}}</p>
+            <p class="ui-snippet">{{snippet3}}</p>
 
-        <a href={{link4}}><h3>{{title4}}</h3></a> 
-        <p class="ui-display-link">{{dispLink4}}</p>
-        <p>{{snippet4}}</p>
+            <a href={{link4}}>{{title4}}</a> 
+            <p class="ui-display-link">{{dispLink4}}</p>
+            <p class="ui-snippet">{{snippet4}}</p>
 
-        <a href={{link5}}><h3>{{title5}}</h3></a> 
-        <p class="ui-display-link">{{dispLink5}}</p>
-        <p>{{snippet5}}</p>
+            <a href={{link5}}>{{title5}}</a> 
+            <p class="ui-display-link">{{dispLink5}}</p>
+            <p class="ui-snippet">{{snippet5}}</p>
 
-        <a href={{link6}}><h3>{{title6}}</h3></a> 
-        <p class="ui-display-link">{{dispLink6}}</p>
-        <p>{{snippet6}}</p>
+            <a href={{link6}}>{{title6}}</a> 
+            <p class="ui-display-link">{{dispLink6}}</p>
+            <p class="ui-snippet">{{snippet6}}</p>
 
-        <a href={{link7}}><h3>{{title7}}</h3></a> 
-        <p class="ui-display-link">{{dispLink7}}</p>
-        <p>{{snippet7}}</p>
+            <a href={{link7}}>{{title7}}</a> 
+            <p class="ui-display-link">{{dispLink7}}</p>
+            <p class="ui-snippet">{{snippet7}}</p>
 
-        <a href={{link8}}><h3>{{title8}}</h3></a> 
-        <p class="ui-display-link">{{dispLink8}}</p>
-        <p>{{snippet8}}</p>
+            <a href={{link8}}>{{title8}}</a> 
+            <p class="ui-display-link">{{dispLink8}}</p>
+            <p class="ui-snippet">{{snippet8}}</p>
 
-        <a href={{link9}}><h3>{{title9}}</h3></a> 
-        <p class="ui-display-link">{{dispLink9}}</p>
-        <p>{{snippet9}}</p>
+            <a href={{link9}}>{{title9}}</a> 
+            <p class="ui-display-link">{{dispLink9}}</p>
+            <p class="ui-snippet">{{snippet9}}</p>
 
-        <a href={{link10}}><h3>{{title10}}</h3></a> 
-        <p class="ui-display-link">{{dispLink10}}</p>
-        <p>{{snippet10}}</p>
-    </body>
+            <a href={{link10}}>{{title10}}</a> 
+            <p class="ui-display-link">{{dispLink10}}</p>
+            <p class="ui-snippet">{{snippet10}}</p>
+        </body>
+    </div>
 </html>

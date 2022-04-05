@@ -4,6 +4,9 @@
     --ui-color-n-200: #353535;
     --ui-color-n-300: #3e1a1a;
     --ui-color-n-400: #212667;
+    --ui-color-n-500: #9c9de2;
+    --ui-color-background-primary: #1E2028;
+    --ui-color-body: #242731;
 
 
     --ui-typography-typeface: "Poppins", sans-serif;
@@ -29,8 +32,9 @@
   --ui-display-link:
 }
 
+/* Text, margins, and backgrounds */
 body {
-    background-color: var(--ui-color-n-200);
+    background-color: var(--ui-color-background-primary);
     color: var(--ui-color-n-100);
     font-family: var(--ui-typography-typeface);
     font-feature-settings: "liga", "kern";
@@ -38,8 +42,9 @@ body {
     font-weight: 400;
     line-height: var(--ui-typography-p-leading);
     margin: 0 auto;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-left: 260px;
+    margin-top: 200px;
+    padding-right: 50%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -49,15 +54,72 @@ h1 {
 }
 
 h3 {
-    color: var(--ui-color-n-100)
+    color: var(--ui-color-n-100);
+    padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;
+    margin-bottom: 0mm;    
 }
 
 p {
     color: var(--ui-color-n-100);
 }
+/* End text, margins, and background */
+
+/* Links */
+a {
+    color: var(--ui-color-n-100);
+    text-decoration: none;
+    font-size: x-large;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--ui-color-n-100);
+}
+
+a:visited {
+    color: var(--ui-color-n-500);
+}
+/* End of Links */
+
+form {
+    width: 100%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+input {
+    border-radius: 5rem;
+    width: 50%;
+    height: 125%;
+}
+
+button {
+    border-radius: 5rem;
+    width: 50%;
+    height: 125%;
+}
+
+header {
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 20%;
+}
 
 .ui-display-link {
-    margin-top: 1px;
-    padding: 1px;
+    margin-top: 0mm;
+    padding-top: 0mm;
+    padding-bottom: 2%;
     font-size: smaller;
+}
+
+.ui-snippet {
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+.ui-body-background {
+    background: var(--ui-color-body);
+    border-radius: 1rem;
 }

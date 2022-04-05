@@ -30,7 +30,7 @@ def webbrowser():
     return render_template('index.html')
 
 @app.route('/result', methods = ['POST', 'GET'])
-def data():
+def result():
     if request.method == 'GET':
         return f"The URL /result is accessed directly. Try going to '/index' to submit form"
     if request.method == 'POST':
@@ -49,11 +49,6 @@ def data():
             # pprint.pprint(result['displayLink'])
             # pprint.pprint(result['snippet'])
             # pprint.pprint(result['link'])
-
-            tListLen = 0
-
-        for i in range(len(titleList)):
-            tListLen = i
             
         title = titleList[0]
         dispLink = displayLinkList[0]
