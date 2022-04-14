@@ -157,6 +157,7 @@ header {
 
 .ui-result-type {
     background: #21232b;
+    font-size: 16px;
     display: flex;
     flex-flow: row;
     border-radius: 1rem;
@@ -172,8 +173,8 @@ header {
 
 .search-icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -181,8 +182,8 @@ header {
 
 .image-icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -190,8 +191,8 @@ header {
 
 .video-icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -199,8 +200,8 @@ header {
 
   .news-icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -208,4 +209,13 @@ header {
 
   .search-info {
       margin-left: 45%;
+  }
+
+  .top-container {
+      display: flex;
+      flex-flow: row;
+  }
+
+  .settings-icon {
+      margin-left: 40%;
   }
