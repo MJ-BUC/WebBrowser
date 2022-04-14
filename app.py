@@ -1,3 +1,8 @@
+ # Mark Bucaro
+ # CPSC 306; Spring 2022
+ # Portfolio Assignment - app.py
+ # Code Summary: This source code file is for the portfolio assignment ...with more details provided here. 
+
 import os
 from flask import Flask, request, render_template
 from googleapiclient.discovery import build
@@ -15,8 +20,8 @@ snippetList = []
 linkList = []
 
 ### Google custom search using google api ###
-my_api_key = ""
-my_cse_id = ""
+my_api_key = "AIzaSyCJyBCMw8i5y82WoXkwfwzEgAinSLI-dwc"
+my_cse_id = "34f9a6b0d542fbf3a"
 
 def google_search(search_term, api_key, cse_id, **kwargs):
     service = build("customsearch", "v1", developerKey=api_key)

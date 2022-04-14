@@ -26,18 +26,17 @@
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/resultstyle.css') }}"> <!-- allows flask to see the css file -->
         <title>Temp Results Page</title>
     </head>
-    <header>
-        <div class="ui-component-cta ui-layout-flex">
-            <form action="/result" method="POST" class="ui-component-form ui-layout-grid ui-layout-column-4">
-            <input type="text" name="search" id="search" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
-            <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
+    
+    <body class="container">
+        <div class="ui-component-form">
+            <form action="/result" method="POST">
+                <input type="text" name="search" id="search" placeholder="Search" class="ui-component-input ui-component-input-medium" required>
+                <button type="submit" class="ui-component-button ui-component-button-medium ui-component-button-primary">Go</button>
             </form>
         </div>
-    </header>   
-    <div class="ui-body-background">
-        <body>
-            <h1>Temp Results Page:</h1>
-            <p>Input search: {{formData}}</p>
+        <div class="ui-body-background">
+            <!-- <h1>Temp Results Page:</h1>
+            <p>Input search: {{formData}}</p> -->
 
             <a href={{link1}}>{{title1}}</a> 
             <p class="ui-display-link">{{dispLink1}}</p>
@@ -78,6 +77,6 @@
             <a href={{link10}}>{{title10}}</a> 
             <p class="ui-display-link">{{dispLink10}}</p>
             <p class="ui-snippet">{{snippet10}}</p>
-        </body>
-    </div>
+        </div>
+    </body>
 </html>
