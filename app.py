@@ -19,6 +19,14 @@ displayLinkList = []
 snippetList = []
 linkList = []
 
+### Debugging Sample Data###
+titleList = ["Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title"]
+displayLinkList = ["Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link"]
+snippetList = ["Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit"]
+linkList = ["https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/"]
+### Debugging Sample Data###
+
+
 ### Google custom search using google api ###
 my_api_key = "AIzaSyCJyBCMw8i5y82WoXkwfwzEgAinSLI-dwc"
 my_cse_id = "34f9a6b0d542fbf3a"
@@ -42,13 +50,13 @@ def result():
         form_data = request.form["search"] # uses the name attribute of the html input as the key because form data is saved as dict
         print(form_data)
 
-        results = google_search(form_data, my_api_key, my_cse_id, num=10)
-        for result in results:
-            # pprint.pprint(result)
-            titleList.append(result['title'])
-            displayLinkList.append(result['displayLink'])
-            snippetList.append(result['snippet'])
-            linkList.append(result['link'])
+        # results = google_search(form_data, my_api_key, my_cse_id, num=10)
+        # for result in results:
+        #     # pprint.pprint(result)
+        #     titleList.append(result['title'])
+        #     displayLinkList.append(result['displayLink'])
+        #     snippetList.append(result['snippet'])
+        #     linkList.append(result['link'])
             # print('\n\n')
             # pprint.pprint(result['title'])
             # pprint.pprint(result['displayLink'])

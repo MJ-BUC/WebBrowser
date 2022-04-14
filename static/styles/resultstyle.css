@@ -96,8 +96,8 @@ input {
     float: left;
 }
 
-input:active {
-    border: none;
+input:focus {
+    outline: none;
 }
 
 button {
@@ -136,7 +136,7 @@ header {
     flex-wrap: wrap;
     flex-flow: column wrap;
     border-radius: 1rem;
-    top: 120%;
+    top: 110%;
     left: 35%;
     width: 770px;
     position: absolute;
@@ -154,3 +154,58 @@ header {
     gap: 10px;
     margin-left: 9%;
 }
+
+.ui-result-type {
+    background: #21232b;
+    display: flex;
+    flex-flow: row;
+    border-radius: 1rem;
+    left: 33%;
+    width: 770px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    padding-left: 20px;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+.image-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+.video-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .news-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .search-info {
+      margin-left: 45%;
+  }
