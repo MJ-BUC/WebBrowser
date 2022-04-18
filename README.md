@@ -5,5 +5,5 @@
 <h1> Progress Report </h1>
 <h3>Current Home/Search screen:</h3>
 <img width="1280" alt="Home_Search" src="https://user-images.githubusercontent.com/82846057/161549298-ead2d518-51d7-4ac5-bf54-163d110fcf84.png">
-<h3>Current Results Page (Temporary):</h3>
-<img width="1280" alt="Temp_Results_Page" src="https://user-images.githubusercontent.com/82846057/161549541-435cfe0f-9f3d-45be-b3b1-16733719f208.png">
+<h3>Current Results Page:</h3>
+<img width="1280" alt="current_results_page" src="https://user-images.githubusercontent.com/82846057/163866276-0675f2be-4351-4f62-9f31-2dfdaedb2add.png">
