@@ -20,10 +20,10 @@ snippetList = []
 linkList = []
 
 ### Debugging Sample Data###
-titleList = ["Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title"]
-displayLinkList = ["Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link"]
-snippetList = ["Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit"]
-linkList = ["https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/"]
+# titleList = ["Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title","Sample Title"]
+# displayLinkList = ["Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link","Sample Display Link"]
+# snippetList = ["Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit","Sample Snippit"]
+# linkList = ["https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/","https://www.python.org/"]
 ### Debugging Sample Data###
 
 
@@ -50,18 +50,24 @@ def result():
         form_data = request.form["search"] # uses the name attribute of the html input as the key because form data is saved as dict
         print(form_data)
 
-        # results = google_search(form_data, my_api_key, my_cse_id, num=10)
-        # for result in results:
-        #     # pprint.pprint(result)
-        #     titleList.append(result['title'])
-        #     displayLinkList.append(result['displayLink'])
-        #     snippetList.append(result['snippet'])
-        #     linkList.append(result['link'])
-            # print('\n\n')
-            # pprint.pprint(result['title'])
-            # pprint.pprint(result['displayLink'])
-            # pprint.pprint(result['snippet'])
-            # pprint.pprint(result['link'])
+        # clear the lists at the beginning of each search
+        titleList = []
+        displayLinkList = []
+        snippetList = []
+        linkList = []
+
+        results = google_search(form_data, my_api_key, my_cse_id, num=10)
+        for result in results:
+            # pprint.pprint(result)
+            titleList.append(result['title'])
+            displayLinkList.append(result['displayLink'])
+            snippetList.append(result['snippet'])
+            linkList.append(result['link'])
+            print('\n\n')
+            pprint.pprint(result['title'])
+            pprint.pprint(result['displayLink'])
+            pprint.pprint(result['snippet'])
+            pprint.pprint(result['link'])
             
         title = titleList[0]
         dispLink = displayLinkList[0]
@@ -184,7 +190,7 @@ def result():
         title7=title7, dispLink7=dispLink7, snippet7=snippet7, link7=link7, 
         title8=title8, dispLink8=dispLink8, snippet8=snippet8, link8=link8, 
         title9=title9, dispLink9=dispLink9, snippet9=snippet9, link9=link9, 
-        title10=title10, dispLink10=dispLink10, snippet10=snippet10, link10=link10, )
+        title10=title10, dispLink10=dispLink10, snippet10=snippet10, link10=link10)
 
 if __name__ == "__main__":
     app.run(debug=True)

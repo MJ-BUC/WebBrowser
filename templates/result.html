@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
         <link rel="preload" as="style" href="{{ url_for('static',filename='styles/resultstyle.css') }}">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/resultstyle.css') }}"> <!-- allows flask to see the css file -->
-        <title>Temp Results Page</title>
+        <title>{{formData}}</title>
     </head>
     
     <body class="container">
