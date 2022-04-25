@@ -28,8 +28,8 @@ linkList = []
 
 
 ### Google custom search using google api ###
-my_api_key = "AIzaSyCJyBCMw8i5y82WoXkwfwzEgAinSLI-dwc"
-my_cse_id = "34f9a6b0d542fbf3a"
+my_api_key = ""
+my_cse_id = ""
 
 def google_search(search_term, api_key, cse_id, **kwargs):
     service = build("customsearch", "v1", developerKey=api_key)
