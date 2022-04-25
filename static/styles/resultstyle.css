@@ -59,7 +59,7 @@ p {
 
 /* Links */
 a {
-    color: var(--ui-color-n-100);
+    color: rgb(124, 185, 255);
     text-decoration: none;
     font-size: x-large;
     display: inline-block;
@@ -67,7 +67,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--ui-color-n-100);
+    text-decoration-color: rgb(124, 185, 255);
 }
 
 a:visited {
