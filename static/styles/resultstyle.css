@@ -32,6 +32,23 @@
   --ui-display-link:
 }
 
+/* html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+}
+
+html::-webkit-scrollbar {
+    width: 2vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    scrollbar-color: red;
+}
+
+html::-webkit-scrollbar-track {
+    scrollbar-color: green;
+} */
+
 /* Text, margins, and backgrounds */
 body {
     background-color: var(--ui-color-background-primary);
